@@ -37,7 +37,7 @@ subject: NKBA Jobs - New Applicant for {{jobTitle}} at {{jobCompanyName}}
                 </tr>
                 <tr>
                     <td class="content-block text-4" valign="top">
-                       <strong>Job Title:</strong> \{{ jobTitle }} at \{{jobCompanyName}} (<a href="\{{WEB_URL}}/job/\{{jobId}}">\{{WEB_URL}}/job/\{{jobId}}</a>)
+                       <strong>Job Title:</strong> \{{ jobTitle }} at \{{jobCompanyName}}\{{#if jobId}} (<a href="\{{WEB_URL}}/job/\{{jobId}}">\{{WEB_URL}}/job/\{{jobId}}</a>)\{{/if}}
                     </td>
                 </tr>
                 <tr>
