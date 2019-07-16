@@ -1,16 +1,15 @@
 ---
-layout: default.hbs
+layout: pdf.hbs
 subject: Receipt
 ---
-<span class="preheader">\{{ previewText }}</span>
-<table class="header" align="center" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FDFDFE" border="0">
+<table class="header header--pdf" align="center" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFF" border="0">
     <tr>
-        <td class="wrapper border-bottom" valign="middle">
+        <td class="wrapper" valign="middle">
             <a href="\{{WEB_URL}}"><img class="logo" border="0" src="https://media.nkba.org/img/nkba-logo@2x.png" alt="NKBA" height="30" width="141"></a>
         </td>
     </tr>
 </table>
-<table class="main" cellspacing="0" cellpadding="0" border="0">
+<table class="main main--pdf" cellspacing="0" cellpadding="0" border="0">
     <tr>
         <td class="wrapper">
             <table width="100%">
@@ -34,12 +33,12 @@ subject: Receipt
                     <td class="content-block align-center">
                         <table class="invoice">
                             <tr>
-                                <td><strong>Account billed:</strong> \{{ account.name }} <small>(\{{ email }})</small><br>                                    
-                                    <strong>Account ID:</strong> \{{ account.number }}<br>
-                                    <strong>Order ID:</strong> \{{ order.number }}<br>
-                                    \{{#if transaction}}<strong>Transaction ID:</strong> \{{ transaction.number }}<br>\{{/if}}
-                                    <strong>Date:</strong> \{{ date }}<br>                                    
-                                    \{{#if startDate}}<strong>Period:</strong> \{{startDate}} to \{{endDate}}<br>\{{/if}}                                   
+                                <td><strong>Account billed:</strong> \{{ account.name }} <small>(\{{ email }})</small><br/>                                    
+                                    <strong>Account ID:</strong> \{{ account.number }}<br/>
+                                    <strong>Order ID:</strong> \{{ order.number }}<br/>
+                                    \{{#if transaction}}<strong>Transaction ID:</strong> \{{ transaction.number }}<br/>\{{/if}}
+                                    <strong>Date:</strong> \{{ date }}<br/>                                    
+                                    \{{#if startDate}}<strong>Period:</strong> \{{startDate}} to \{{endDate}}<br/>\{{/if}}                                   
                                     
                                 </td>
                             </tr>
@@ -86,12 +85,8 @@ subject: Receipt
                                         </tr>
                                         \{{#if invoice}}
                                         <tr class="total">
-                                            <td class="align-right" width="70%">Paid</td>
-                                            <td class="align-right">$ \{{paymentAmount}}</td>
-                                        </tr>
-                                        <tr class="total">
                                             <td class="align-right" width="70%">Due</td>
-                                            <td class="align-right">$ \{{dueAmount}}</td>
+                                            <td class="align-right">$ \{{billAmount}}</td>
                                         </tr>
                                         \{{else}}
                                         <tr class="total">
@@ -114,3 +109,13 @@ subject: Receipt
         </td>
     </tr>
 </table>
+<div class="footer">
+    <table>
+        <tr>
+            <td class="align-center">
+                You are receiving this because you made a purchase at <a href="\{{WEB_URL}}">NKBA</a>. <br/> The National Kitchen
+                and Bath Association<br/> 687 Willow Grove St<br/> Hackettstown, NJ 07840
+            </td>
+        </tr>
+    </table>
+</div>

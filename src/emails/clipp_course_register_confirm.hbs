@@ -1,0 +1,214 @@
+---
+layout: default_no_footer.hbs
+subject: Confirmation - {course_info:title}
+---
+
+<span class="preheader">
+[gravityforms action="conditional" merge_tag="{course_info:virtual}" condition="is" value="No"]
+    This is to confirm your registration for the {course_info:dates.first.date} to {course_info:dates.last.date} 2-day class at {course_info:location.street_1} in {course_info:location.city}, {course_info:location.state}. Class will start promptly at {course_info:dates.first.start_time} and end at {course_info:dates.first.end_time}.
+    Thank you for helping to make all homes accessible, comfortable and safe for everyone! This email is confirmation of your successful registration. If any of the information displayed below is incorrect, please contact us as soon as possible.
+    If you would like to live tweet during this event, please use the hashtag #living_in_place.
+[/gravityforms]
+[gravityforms action="conditional" merge_tag="{course_info:virtual}" condition="is" value="Yes"]
+    This is to confirm your registration for the {course_info:dates.first.date} Virtual class. Class will start promptly at {course_info:dates.first.start_time} and end at {course_info:dates.first.end_time}. Thank you for helping to make all homes accessible, comfortable and safe for everyone! This email is confirmation of your successful registration. If any of the information displayed below is incorrect, please contact us as soon as possible.
+    If you would like to live tweet during this event, please use the hashtag #living_in_place.
+[/gravityforms]
+</span>
+<table class="header" align="center"  width="100%" cellspacing="0" cellpadding="0" bgcolor="#FDFDFE"  border="0">
+    <tr>
+        <td class="wrapper border-bottom" valign="middle">
+            <a href="https://nkba.org"><img class="logo" border="0" src="https://media.nkba.org/img/nkba-logo@2x.png" alt="NKBA" height="30" width="141"></a>
+        </td>
+    </tr>
+</table>
+<table class="main" cellspacing="0" cellpadding="0" border="0">
+    <tr>
+        <td class="wrapper">
+            <table width="100%">
+
+                <tr>
+                    <td class="content-block text-4 pt1 " valign="top">
+                        <a href="https://www.livinginplace.institute"><img border="0" src="https://media.nkba.org/wp-content/uploads/2018/09/27134716/clipp-institute-e1538070565197.jpg" alt="NKBA" height="100" width="100"></a>
+                    </td>
+                </tr>   
+                <tr>
+                    <td class="content-block text-4 pt1 " valign="top">
+                        <h1  class="text-2 bold">
+                            {course_info:title}
+                        </h1>
+                    </td>
+                </tr>   
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                    [gravityforms action="conditional" merge_tag="{course_info:virtual}" condition="is" value="No"]
+                        This is to confirm your registration for the {course_info:dates.first.date} to {course_info:dates.last.date} 2-day class at {course_info:location.street_1} in {course_info:location.city}, {course_info:location.state}. Class will start promptly at {course_info:dates.first.start_time} and end at {course_info:dates.first.end_time}.
+                        Thank you for helping to make all homes accessible, comfortable and safe for everyone! This email is confirmation of your successful registration. If any of the information displayed below is incorrect, please contact us as soon as possible.
+                        If you would like to live tweet during this event, please use the hashtag #living_in_place.
+                    [/gravityforms]
+                    [gravityforms action="conditional" merge_tag="{course_info:virtual}" condition="is" value="Yes"]
+                        This is to confirm your registration for the {course_info:dates.first.date} Virtual class. Class will start promptly at {course_info:dates.first.start_time} and end at {course_info:dates.first.end_time}. Thank you for helping to make all homes accessible, comfortable and safe for everyone! This email is confirmation of your successful registration. If any of the information displayed below is incorrect, please contact us as soon as possible.
+                        If you would like to live tweet during this event, please use the hashtag #living_in_place.
+                    [/gravityforms]
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4 pt3" valign="top">
+                      <h3 class="text-3 bold pb0">Course Information</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4 invoice" valign="top">
+                       <strong>Dates</strong><br>
+                        {course_info:dates}
+                    </td>
+                </tr>
+                [gravityforms action="conditional" merge_tag="{course_info:virtual}" condition="is" value="No"]
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                       <strong>Location</strong><br>
+                        {course_info:location.street_1}<br>
+                        {course_info:location.street_2}<br>
+                        {course_info:location.city}, {course_info:location.state} {course_info:location.postal}
+                    </td>
+                </tr>
+                [/gravityforms]
+                <tr>
+                    <td class="content-block text-4 pt3" valign="top">
+                      <h3 class="text-3 bold pb0">Personal Information</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>First Name:</strong> {name (First):7.3}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>Last Name:</strong> {name (Last):7.6}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>Email Address:</strong> {email:8}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>Cell Phone:</strong> {phone:9}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>How did you learn about this course?</strong><br>
+                        {How did you learn about this course?:21}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4 pt3" valign="top">
+                      <h3 class="text-3 bold pb0">Business Information</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>Company: </strong>{Company Name:14}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>Job Title: </strong>{Job Title:15}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>Website: </strong>{Website:17}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>Address: </strong>{Address (Street Address):18.1}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>City: </strong>{Address (City):18.3}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>State: </strong>{Address (State / Province):18.4}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>ZIP Code: </strong>{Address (ZIP / Postal Code):18.5}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4 pt3" valign="top">
+                      <h3 class="text-3 bold pb0">Any Issues and Cancellation</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>If you have any food sensitivities, please list below and send a separate email to Erik@LivingInPlace.Institute. We will attempt to accommodate your needs.</strong><br>
+                        {Do you have any food sensitivities?:28}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>If you have a service animal, please list below and send a separate email to Erik@LivingInPlace.Institute. We will attempt to accommodate your needs.</strong><br>
+                        {Do you have a service animal?:33}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>If you have a physical or cognitive request or need, please list below and send a separate email to Erik@LivingInPlace.Institute. We will attempt to accommodate your needs.</strong><br>
+                        {Do you have a physical or cognitive request?:32}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>Please confirm that you understand and agree to the Course Cancellation and Refund Policy as found at <a href="https://livinginplace.institute/professionalsfaq">www.LivingInPlace.Institute</a>.</strong><br>
+                        {Course Cancellation and Refund Policy (Yes, I understand and agree to the Policy and will continue with my registration.):35.1}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4 pt3" valign="top">
+                      <h3 class="text-3 bold pb0">Membership Discounts and Rebates</h3>
+                      NKBA members receive $350 Instant Savings during registration. All other please visit <a href="https://livinginplace.institute/professionalsfaq">www.LivingInPlace.Institute</a>
+                    </td>
+                </tr>
+                [gravityforms action="conditional" merge_tag="{memberNumber:42}" condition="isnot" value=""]
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>NKBA Membership Number: </strong> {memberNumber:42}
+                    </td>
+                </tr>
+                [/gravityforms]
+                [gravityforms action="conditional" merge_tag="{memberNumber:42}" condition="is" value=""]
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        <strong>NKBA Membership Number: </strong> Not a member
+                    </td>
+                </tr>
+                [/gravityforms]
+                <tr>
+                    <td class="pb3 text-4" valign="top"> {{> divider }}</td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        NKBA members who register for a CLIPP certification class will receive an automatic $350 Instant Savings during registration. Your purchase is made on behalf of the Living In Place Institute and all questions or issues must be made directly to Co-Founders Erik Listou (<a href="mailto:Erik@LivingInPlace.Institute">Erik@LivingInPlace.Institute</a>) or Louie Delaware (<a href="mailto:Louie@LivingInPlace.Institute">Louie@LivingInPlace.Institute</a>) or 888-427-3220
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                        Erik Listou, Co-Founder, CLIPP, CAPS, CAASH, CGR, CGP, CR, LDST<br>
+                        Living In Place Institute<br>
+                        888-427-3220<br>
+                        <a href="mailto:Erik@LivingInPlace.Institute">Erik@LivingInPlace.Institute</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
