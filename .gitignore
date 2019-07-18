@@ -8,3 +8,4 @@ preview/css
 src/css/*.css
 deploy/dist/*
 deploy/index.html
+secrets.json
