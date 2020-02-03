@@ -1,8 +1,8 @@
 ---
 layout: default.hbs
-subject: NKBA Dues Reminder
+subject: Your membership expires in 7 days!
 ---
-<span class="preheader">We hope you’ve had a happy and prosperous year. This is a gentle reminder that your annual NKBA membership and/or certification fee is due \{{dueDate}}.</span>
+<span class="preheader">Enjoy exclusive benefits and gain competitive advantage in an ever-changing industry.</span>
 <table class="header" align="center" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FDFDFE" border="0">
     <tr>
         <td class="wrapper border-bottom" valign="middle">
@@ -19,25 +19,31 @@ subject: NKBA Dues Reminder
                         <h1>\{{#if invoice}}Invoice\{{else}}Receipt\{{/if}}</h1>
                     </td>
                 </tr> --}}
+                <tr>
+                    <td class="content-block text-4 pt1 " valign="top">
+                        <h3>LAST CHANCE!</h3>
+                        <h2 class="bold">It’s Easy to Renew Membership Right Now! </h2>
+                    </td>
+                </tr>
 
                 <tr>
                     <td class="py3 text-4" valign="top">
                         Dear \{{name}},
                     </td>
                 </tr>
-                <tr>
+                 <tr>
                     <td class="pb2 text-4" valign="top">
-                        We hope you’ve had a happy and prosperous year. This is a gentle reminder that your annual NKBA membership and/or certification fee is due \{{dueDate}}.
+                        We really don't want to see you go. That’s why we offer easy renewal online or over the phone. 
                     </td>
                 </tr>
                 <tr>
                     <td class="pb2 text-4" valign="top">
-                        We value your membership and look forward to a fantastic year ahead. Our industry is thriving, and with your continued support, we are able to provide benefits and programs to inspire, lead and empower the kitchen and bath business. We recently launch of our enhanced, mobile-first website designed to help you do business better. The site, along with terrific learning opportunities and affinity programs, are among the improved member benefits we have planned for you throughout the year.
+                        <strong>Your annual NKBA membership dues and/or certification fee* are due on \{{dueDate}} </strong>.
                     </td>
                 </tr>
                    <tr>
                     <td class="pb3 text-4" valign="top">
-                        To pay dues online, please click the button below, or call <a href="tel:+18008436522">800-843-6522</a> and one of our member relations associates will assist you. NKBA accepts American Express, Visa, MasterCard and Discover. Please allow up to 72 hours for processing.
+                        We value your membership and look forward to a fantastic year ahead. Our industry is thriving, and with your continued support, we are able to provide benefits and programs to inspire, lead and empower kitchen and bath professionals everywhere. 
                     </td>
                 </tr>
     
@@ -46,30 +52,68 @@ subject: NKBA Dues Reminder
                       {{> button type="primary" title="Pay Online" url="{{WEB_URL}}/autologin/{{token}}?redirect={{WEB_URL}}/orders/{{orderId}}" align="left"}}
                     </td>
                 </tr>
-                <tr>
+                 <tr>
                     <td class="pb2 text-4" valign="top">
-                       Please take a moment to review your membership information such as point of contact, address, phone and email address.
-                       If you need to make any changes to the membership information, you may do so online or contact the NKBA Engagement Team at <a href="tel:+18008436522">800-843-6522</a> or email <a href="mailto:info@nkba.org">info@nkba.org</a>  
+                       <strong>Enjoy These Exclusive Offerings with Your Membership</strong>
                     </td>
                 </tr>  
                 <tr>
                     <td class="pb2 text-4" valign="top">
-                        Don’t miss out on your member benefits and renew by \{{dueDate}}
+                        You’ll gain competitive advantage in an ever-changing industry.
                     </td>
                 </tr>
                 <tr>
-                    <td class="pb2 text-3 bold" valign="top">
-                        Thank you again for your continued support of NKBA!
+                    <td class="pb2 text-3" valign="top">
+                      <ul>
+                          <li><strong>EXCLUSIVE</strong> KBIS Discounts<br><em>Free early-bird registration and member-only savings to attend and exhibit</em></li>
+                          <li><strong>COMPLIMENTARY</strong> Easy-to-Build Business Web Page<br><em>Free early-bird registration and member-only savings to attend and exhibit</em></li>
+                          <li><strong>PROFESSIONAL DEVELOPMENT: </strong> Education, Certifications, Specialty Badges and free monthly webinars<br><em>Globally recognized professional appellations communicate your expertise, build your reputation and "street cred"</em></li>
+                          <li><strong>COMPLIMENTARY</strong> Membership for Your Employees<br><em>Full access to all the benefits of the NKBA</em></li>
+                          <li>Robust Exclusive <strong>Job Database</strong><br><em>Post jobs you need filled or search for new opportunities</em></li>
+                      </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb2 text-4" valign="top">
+                       <strong>PLUS</strong>, enjoy the look and experience of our mobile-optimized website.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb3 text-4" valign="top">   
+                      {{> button type="primary" title="Pay Online" url="{{WEB_URL}}/autologin/{{token}}?redirect={{WEB_URL}}/orders/{{orderId}}" align="left"}}
+                      <p><em>This link expires 2 weeks from today. To pay online anytime, please refer to the attached PDF for instructions.</em></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb2 text-4" valign="top">
+                       OR
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb2 text-4" valign="top">
+                       <strong>Call to Renew</strong><br>Please contact NKBA Member Relations at (800) 843-6522.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb2 text-4" valign="top">
+                       <em>If you have previously submitted your dues for payment, please disregard this message and we thank you for your prompt payment.</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb2 text-4" valign="top">
+                       Thank you for your continued support of the NKBA!
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="pb2 text-4" valign="top">
+                        Sincerely,<br>
+                        The NKBA
                     </td>
                 </tr>
                 <tr>
                     <td class="pb2 text-4 italic" valign="top">
-                       If you have previously submitted your dues for payment, please disregard this message and we thank you for your prompt payment.
-                    </td>
-                </tr>
-                <tr>
-                    <td class="pb2 text-5 italic" valign="top">
-                       Note: The NKBA membership year is based on 12 months from renewal date.
+                        The NKBA membership year is based on 12 months from renewal date.
                     </td>
                 </tr>
                 

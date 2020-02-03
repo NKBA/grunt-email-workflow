@@ -1,0 +1,59 @@
+---
+layout: default.hbs
+subject: Your job post is expiring!
+---
+
+<span class="preheader">Your post on the NKBA job database needs attention!</span>
+<table class="header" align="center"  width="100%" cellspacing="0" cellpadding="0" bgcolor="#FDFDFE"  border="0">
+    <tr>
+        <td class="wrapper border-bottom" valign="middle">
+            <a href="\{{WEB_URL}}"><img class="logo" border="0" src="https://media.nkba.org/img/nkba-logo@2x.png" alt="NKBA" height="30" width="141"></a>
+        </td>
+    </tr>
+</table>
+<table class="main" cellspacing="0" cellpadding="0" border="0">
+    <tr>
+        <td class="wrapper">
+            <table width="100%">
+                <tr>
+                    <td class="content-block text-4 pt1 " valign="top">
+                        <h1  class="text-2 bold">
+                           Your Job Post Needs Attention! </h1>
+                    </td>
+                </tr>       
+                <tr>
+                    <td class="py3 text-4" valign="top">
+                        Dear \{{name}},
+                    </td>
+                </tr>        
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                       This is a reminder that your job post on NKBA.org is expiring. Posts expire after 60 days, or you can take them down at any time. We’re delighted if we’ve helped you to fill the position, but if you wish to reissue the posting, visit your newsfeed page and on the right hand side, click "Post a Job."
+                    </td>
+                </tr>     
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                       This will bring you to your latest job posting. From there, scroll down to the bottom of the posting under the "Publishing" heading and select the option that fits your needs.
+                    </td>
+                </tr>    
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                      Any questions, please contact NKBA Member Relations at (800) 843-6522 or email <a href="mailto:info@nkba.org">info@nkba.org</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb3 text-4" valign="top">   
+                      {{> button type="secondary" title="View Job Post" url="{{WEB_URL}}/job/{{jobId}}" align="center"}}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                      Sincerely,<br>
+                      The NKBA
+                    </td>
+                </tr>
+ 
+            </table>
+        </td>
+    </tr>
+</table>
