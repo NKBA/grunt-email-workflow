@@ -1,13 +1,12 @@
 ---
 layout: default.hbs
-subject: You’ve been added as {{#if isStudent}}a student member{{else}}an employee{{/if}} of {{ org.name }} on the new NKBA.org
+subject: NKBA BENEFITS: Your NKBA Membership includes a free profile page on NKBA.org, job board, market research, professional development and much more!
 ---
-
-<span class="preheader">You’ve been added as \{{#if isStudent}}a student member\{{else}}an employee\{{/if}} of \{{ org.name }} on the new NKBA.org</span>
+<span class="preheader">Don’t miss the chance to accelerate business and generate leads with your FREE industry profile.</span>
 <table class="header" align="center"  width="100%" cellspacing="0" cellpadding="0" bgcolor="#FDFDFE"  border="0">
     <tr>
         <td class="wrapper border-bottom" valign="middle">
-            <a href="\{{WEB_URL}}"><img class="logo" border="0" src="https://media.nkba.org/img/nkba-logo@2x.png" alt="NKBA" height="30" width="141"></a>
+            <img class="logo" border="0" src="https://media.nkba.org/img/nkba-logo@2x.png" alt="NKBA" height="30" width="141">
         </td>
     </tr>
 </table>
@@ -17,37 +16,39 @@ subject: You’ve been added as {{#if isStudent}}a student member{{else}}an empl
             <table width="100%">
                 <tr>
                     <td class="content-block text-4 pt1 " valign="top">
-                        <h2 class="bold">
-                            \{{#if isStudent}}
-                                You've been added as a student member of \{{ org.name }} on NKBA.org.
-                                \{{else}}
-                                You've been added to the \{{ org.name }} organization on NKBA.org. 
-                            \{{/if}}
-                        </h2>
+                       <h2 class="bold">Amplify Your Business, Grow Your Client Base With a FREE NKBA Member Profile Page!</h2>
                     </td>
-                </tr>                
-                \{{#if isStudent}}
-                    <tr>
-                        <td class="content-block text-4" valign="top">
-                        Your complimentary NKBA membership is sponsored by Sub-Zero, Wolf, Cove and Moen.
-                        </td>
-                    </tr>
-                \{{/if}} 
-                \{{#if number}}
-                    <tr>
-                        <td class="content-block text-4" valign="top">
-                        Your NKBA member number is \{{ number }}.
-                        </td>
-                    </tr>
-                \{{/if}}             
+                </tr>
+
                 <tr>
                     <td class="content-block text-4" valign="top">
-                       If you believe this move was made in error, please call the NKBA Member Relations team at 1-800-THE-NKBA or send an email to <a href="mailto:info@nkba.org">info@nkba.org</a>. 
+                       Dear \{{name}},
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                       Welcome to the NKBA! As a valued member, we’re excited to offer you a free member profile page on the NKBA website. Getting started is easy: 
+                       <ol>
+                           <li><a href="\{{WEB_URL}}/reset/\{{token}}">Set a new password</a></li>
+                           <li><strong>Complete</strong> your profile </li>
+                           <li><strong>Share</strong>    it to showcase your work, connect with customers and generate leads.</li>
+                       </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                       NKBA member profiles are designed to produce the best possible search-engine results and help you take your business and your career to the next level.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content-block text-4" valign="top">
+                       <strong>Questions?</strong><br>
+                       Our Member Relations Team is here to support you. Please call 1-800-THE-NKBA (1-800-843-6522) or send an email to <a href="mailto:info@nkba.org">info@nkba.org</a>. 
                     </td>
                 </tr>
                  <tr>
                     <td class="content-block text-4" valign="top">
-                      Thank you,<br>
+                      Sincerely,<br>
                       The NKBA
                     </td>
                 </tr>
