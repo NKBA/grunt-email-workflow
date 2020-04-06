@@ -2,7 +2,7 @@
 layout: default.hbs
 subject: Your membership expires in 30 days!
 ---
-<span class="preheader">Enjoy exclusive benefits and gain a competitive advantage in an ever-changing industry.</span>
+<span class="preheader">Your NKBA Membership Is Due for Renewal.</span>
 <table class="header" align="center" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FDFDFE" border="0">
     <tr>
         <td class="wrapper border-bottom" valign="middle">
@@ -19,12 +19,12 @@ subject: Your membership expires in 30 days!
                         <h1>\{{#if invoice}}Invoice\{{else}}Receipt\{{/if}}</h1>
                     </td>
                 </tr> --}}
-                <tr>
+                {{!-- <tr>
                     <td class="content-block text-4 pt1 " valign="top">
                         <h3>DON’T MISS OUT!</h3>
                         <h2 class="bold">Renew Now and Continue Enjoying All the Benefits of NKBA Membership!</h2>
                     </td>
-                </tr>
+                </tr> --}}
                 <tr>
                     <td class="py3 text-4" valign="top">
                         Dear \{{name}},
@@ -32,20 +32,24 @@ subject: Your membership expires in 30 days!
                 </tr>
                 <tr>
                     <td class="pb2 text-4" valign="top">
-                        Grow your business, enhance your professional development, network with other professionals — there are so many reasons to continue membership. 
+                        We want to remind you that your NKBA membership and/or certification fees are now due for renewal.
                     </td>
                 </tr>
                 <tr>
-                    <td class="pb2 text-4" valign="top">
-                        <strong>Your annual NKBA membership dues and/or certification fee* are due on \{{dueDate}} </strong>.
+                    <td class="pb3 text-4" align="top">
+                        We know the current situation brought on by COVID-19 is uncharted territory for all of us and are aware of the unprecedented conditions impacting our businesses and our lives in general. As such, if paying your dues at this time presents a hardship, we want you to know we are here to work with you and won’t suspend your membership at this time.  Please let us know as soon as possible if you are not able to renew right now, at <a href="mailto:info@nkba.org">info@nkba.org</a>. 
                     </td>
                 </tr>
-                   <tr>
-                    <td class="pb3 text-4" valign="top">
-                        We value your membership and look forward to a fantastic year ahead. Our industry is thriving, and with your continued support, we are able to provide benefits and programs to inspire, lead and empower kitchen and bath professionals everywhere. 
+                <tr>
+                    <td class="pb3 text-4" align="top">
+                        In times of uncertainty our association can be of tremendous value to keep you connected, enhance your professionalism and keep you informed. This is a good time to take advantage of NKBA’s online programs, like free webinars, begin or continue your journey toward certification or acquire NKBA Badges to enhance your professional development. With your continued support, we are able to provide benefits and programs to inspire, lead and empower kitchen and bath professionals everywhere.
                     </td>
                 </tr>
-    
+                <tr>
+                    <td class="pb3 text-4" align="top">
+                        We value your membership and appreciate your support. Our industry is resilient and strong — and together, we will weather the crisis.
+                    </td>
+                </tr>
                 <tr>
                     <td class="pb3 text-4" valign="top">   
                       {{> button type="primary" title="Pay Online" url="{{WEB_URL}}/autologin/{{token}}?redirect={{WEB_URL}}/orders/{{orderId}}" align="left"}}
@@ -53,7 +57,7 @@ subject: Your membership expires in 30 days!
                 </tr>
                  <tr>
                     <td class="pb2 text-4" valign="top">
-                       <strong>Enjoy These Exclusive Offerings with Your Membership</strong>
+                       <strong>Don’t Miss Out On These Exclusive Offerings with Your Membership</strong>
                     </td>
                 </tr>  
                 <tr>
@@ -91,6 +95,12 @@ subject: Your membership expires in 30 days!
                 <tr>
                     <td class="pb2 text-4" valign="top">
                        <strong>Call to Renew</strong><br>Please contact NKBA Member Relations at (800) 843-6522.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb2 text-4" valign="top">
+                       <strong>Questions or Info Changes?</strong><br>
+                       Our Member Relations Team is here to support you. Please call 1-800-THE-NKBA (1-800-843-6522) or email <a href="mailto:info@nkba.org">info@nkba.org</a>.
                     </td>
                 </tr>
                 <tr>
