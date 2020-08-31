@@ -1,6 +1,6 @@
 ---
 layout: default.hbs
-subject: It’s almost time to renew your NKBA Membership!
+subject: Your membership renews in 45 days!
 ---
 <span class="preheader">Enjoy exclusive benefits and gain a competitive advantage in an ever-changing industry.</span>
 <table class="header" align="center" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FDFDFE" border="0">
@@ -41,7 +41,7 @@ subject: It’s almost time to renew your NKBA Membership!
                 </tr>    
                 <tr>
                     <td class="pb3 text-4" valign="top">   
-                      {{> button type="primary" title="Pay Online" url="{{WEB_URL}}/autologin/{{token}}?redirect={{WEB_URL}}/orders/{{orderId}}" align="left"}}
+                      {{> button type="primary" title="Pay Online" url="{{WEB_URL}}/login?redirect={{WEB_URL}}/orders/{{orderId}}" align="left"}}
                     </td>
                 </tr>
                 <tr>
@@ -72,7 +72,7 @@ subject: It’s almost time to renew your NKBA Membership!
                 </tr>
                 <tr>
                     <td class="pb3 text-4" valign="top">   
-                      {{> button type="primary" title="Pay Online" url="{{WEB_URL}}/autologin/{{token}}?redirect={{WEB_URL}}/orders/{{orderId}}" align="left"}}
+                      {{> button type="primary" title="Pay Online" url="{{WEB_URL}}/login?redirect={{WEB_URL}}/orders/{{orderId}}" align="left"}}
                       <p><em>This link expires 2 weeks from today. To pay online anytime, please refer to the attached PDF for instructions.</em></p>
                     </td>
                 </tr>
@@ -84,6 +84,11 @@ subject: It’s almost time to renew your NKBA Membership!
                 <tr>
                     <td class="pb2 text-4" valign="top">
                        <strong>Call to Renew</strong><br>Please contact NKBA Member Relations at (800) 843-6522.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb2 text-4" valign="top">
+                       <strong>Questions or Info Changes?</strong><br>Our Member Relations Team is here to support you. Please call 1-800-THE-NKBA (1-800-843-6522) or email <a href="mailto:info@nkba.org">info@nkba.org</a>.
                     </td>
                 </tr>
                 <tr>

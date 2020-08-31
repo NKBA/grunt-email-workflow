@@ -19,24 +19,28 @@ subject: Your membership expires in 7 days!
                         <h1>\{{#if invoice}}Invoice\{{else}}Receipt\{{/if}}</h1>
                     </td>
                 </tr> --}}
-                <tr>
+                {{!-- <tr>
                     <td class="content-block text-4 pt1 " valign="top">
                         <h3>LAST CHANCE!</h3>
                         <h2 class="bold">It’s Easy to Renew Membership Right Now! </h2>
                     </td>
-                </tr>
+                </tr> --}}
 
                 <tr>
                     <td class="py3 text-4" valign="top">
                         Dear \{{name}},
                     </td>
                 </tr>
-                 <tr>
+                <tr>
                     <td class="pb2 text-4" valign="top">
-                        We really don't want to see you go. That’s why we offer easy renewal online or over the phone. 
+                        <p>We want to remind you that your NKBA membership and/or certification fees are now due for renewal.</p>
+                        <p>We know the current situation brought on by COVID-19 is uncharted territory for all of us and are aware of the unprecedented conditions impacting our businesses and our lives in general. As such, if paying your dues at this time presents a hardship, we want you to know we are here to work with you.</p>
+                        <p>Please call Gerri Klein, Manager of Member Relations at 908 813 3798 or e-mail her at <a href="mailto:gklein@nkba.org">gklein@nkba.org</a>.</p>
+                        <p>In times of uncertainty our association can be of tremendous value to keep you connected, enhance your professionalism and keep you informed.  This is a good time to take advantage of NKBA’s online programs, like free webinars, begin or continue your journey toward certification or acquire NKBA Badges to enhance your professional development. With your continued support, we are able to provide benefits and programs to inspire, lead and empower kitchen and bath professionals everywhere.</p>
+                        <p>We value your membership and appreciate your support. Our industry is resilient and strong — and together, we will weather the crisis.</p>
                     </td>
                 </tr>
-                <tr>
+                {{!-- <tr>
                     <td class="pb2 text-4" valign="top">
                         <strong>Your annual NKBA membership dues and/or certification fee* are due on \{{dueDate}} </strong>.
                     </td>
@@ -45,23 +49,23 @@ subject: Your membership expires in 7 days!
                     <td class="pb3 text-4" valign="top">
                         We value your membership and look forward to a fantastic year ahead. Our industry is thriving, and with your continued support, we are able to provide benefits and programs to inspire, lead and empower kitchen and bath professionals everywhere. 
                     </td>
-                </tr>
+                </tr> --}}
     
                 <tr>
                     <td class="pb3 text-4" valign="top">   
-                      {{> button type="primary" title="Pay Online" url="{{WEB_URL}}/autologin/{{token}}?redirect={{WEB_URL}}/orders/{{orderId}}" align="left"}}
+                      {{> button type="primary" title="Pay Online" url="{{WEB_URL}}/login?redirect={{WEB_URL}}/orders/{{orderId}}" align="left"}}
                     </td>
                 </tr>
-                 <tr>
-                    <td class="pb2 text-4" valign="top">
-                       <strong>Enjoy These Exclusive Offerings with Your Membership</strong>
-                    </td>
-                </tr>  
                 <tr>
                     <td class="pb2 text-4" valign="top">
-                        You’ll gain competitive advantage in an ever-changing industry.
+                        <strong>Don’t Miss Out On These Exclusive Offerings with Your Membership</strong>
                     </td>
                 </tr>
+                <tr>
+                    <td class="pb2 text-4" valign="top">
+                       <strong>You’ll gain a competitive advantage in an ever-changing industry.</strong>
+                    </td>
+                </tr>                  
                 <tr>
                     <td class="pb2 text-3" valign="top">
                       <ul>
@@ -80,7 +84,7 @@ subject: Your membership expires in 7 days!
                 </tr>
                 <tr>
                     <td class="pb3 text-4" valign="top">   
-                      {{> button type="primary" title="Pay Online" url="{{WEB_URL}}/autologin/{{token}}?redirect={{WEB_URL}}/orders/{{orderId}}" align="left"}}
+                      {{> button type="primary" title="Pay Online" url="{{WEB_URL}}/login?redirect={{WEB_URL}}/orders/{{orderId}}" align="left"}}
                       <p><em>This link expires 2 weeks from today. To pay online anytime, please refer to the attached PDF for instructions.</em></p>
                     </td>
                 </tr>
@@ -92,6 +96,11 @@ subject: Your membership expires in 7 days!
                 <tr>
                     <td class="pb2 text-4" valign="top">
                        <strong>Call to Renew</strong><br>Please contact NKBA Member Relations at (800) 843-6522.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb2 text-4" valign="top">
+                       <strong>Questions or Info Changes?</strong><br>Our Member Relations Team is here to support you. Please call 1-800-THE-NKBA (1-800-843-6522) or email <a href="mailto:info@nkba.org">info@nkba.org</a>.
                     </td>
                 </tr>
                 <tr>
