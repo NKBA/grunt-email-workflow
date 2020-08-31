@@ -1,6 +1,6 @@
 ---
 layout: default.hbs
-subject: NKBA RENEWAL Your membership is expired!
+subject: Renew now to continue membership!
 ---
 <table class="header" align="center" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FDFDFE" border="0">
     <tr>
@@ -31,10 +31,14 @@ subject: NKBA RENEWAL Your membership is expired!
                 </tr>
                <tr>
                     <td class="pb2 text-4 bold" valign="top">
-                       We don’t want to see you go, but your NKBA membership dues and/or certifications are now past due. 
+                       <p>We don’t want to see you go, but your NKBA membership dues and/or certifications are now <u><font style="color: blue;">expired</font></u>.</p>
+                       <p>We know the current situation brought on by COVID-19 is uncharted territory for all of us and are aware of the unprecedented conditions impacting our businesses and our lives in general. As such, if paying your dues at this time presents a hardship, we want you to know we are here to work with you.</p>
+                       <p>Please call Gerri Klein, Manager of Member Relations at 908 813 3798 or e-mail her at <a href="mailto:gklein@nkba.org">gklein@nkba.org</a>.</p>
+                       <p>Please be aware that members with unpaid dues are considered inactive and will not be able to access their accounts on NKBA.org, upload photos, or have visible individual or company profiles.</p>
+                       <p>We value your membership and look forward to a fantastic year ahead. Our industry is thriving, and with your continued support, we are able to provide benefits and programs to inspire, lead and empower kitchen and bath professionals everywhere.</p>
                     </td>
                 </tr>
-                <tr>
+                {{!-- <tr>
                     <td class="pb2 text-4 bold" valign="top">
                         <strong>Please be aware that members with unpaid dues are considered inactive and will not be able to access their accounts on NKBA.org, upload photos, or have visible individual or company profiles.</strong>.
                     </td>
@@ -43,13 +47,13 @@ subject: NKBA RENEWAL Your membership is expired!
                     <td class="pb3 text-4" valign="top">
                         We value your membership and look forward to a fantastic year ahead. Our industry is thriving, and with your continued support, we are able to provide benefits and programs to inspire, lead and empower kitchen and bath professionals everywhere.  
                     </td>
-                </tr>
+                </tr> --}}
     
-                <tr>
+                {{!-- <tr>
                     <td class="pb3 text-4" valign="top">   
-                      {{> button type="primary" title="Pay Online" url="{{WEB_URL}}/autologin/{{token}}?redirect={{WEB_URL}}/orders/{{orderId}}" align="left"}}
+                      {{> button type="primary" title="Pay Online" url="{{WEB_URL}}/login?redirect={{WEB_URL}}/orders/{{orderId}}" align="left"}}
                     </td>
-                </tr>
+                </tr> --}}
                  <tr>
                     <td class="pb2 text-4" valign="top">
                        <strong>Don’t Miss Out On These Exclusive Offerings with Your Membership</strong>
@@ -76,9 +80,9 @@ subject: NKBA RENEWAL Your membership is expired!
                        <strong>PLUS</strong>, enjoy the look and experience of our mobile-optimized website.
                     </td>
                 </tr>
-                <tr>
+                {{!-- <tr>
                     <td class="pb3 text-4" valign="top">   
-                      {{> button type="primary" title="Pay Online" url="{{WEB_URL}}/autologin/{{token}}?redirect={{WEB_URL}}/orders/{{orderId}}" align="left"}}
+                      {{> button type="primary" title="Pay Online" url="{{WEB_URL}}/login?redirect={{WEB_URL}}/orders/{{orderId}}" align="left"}}
                       <p><em>This link expires 2 weeks from today. To pay online anytime, please refer to the attached PDF for instructions.</em></p>
                     </td>
                 </tr>
@@ -86,10 +90,15 @@ subject: NKBA RENEWAL Your membership is expired!
                     <td class="pb2 text-4" valign="top">
                        OR
                     </td>
-                </tr>
+                </tr> --}}
                 <tr>
                     <td class="pb2 text-4" valign="top">
                        <strong>Call to Renew</strong><br>Please contact NKBA Member Relations at (800) 843-6522.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pb2 text-4" valign="top">
+                       <strong>Questions or Info Changes?</strong><br>Our Member Relations Team is here to support you. Please call 1-800-THE-NKBA (1-800-843-6522) or email <a href="mailto:info@nkba.org">info@nkba.org</a>.
                     </td>
                 </tr>
                 <tr>
